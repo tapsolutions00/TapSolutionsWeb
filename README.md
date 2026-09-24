@@ -117,5 +117,5 @@ tapsolutionspagina/
 ## 📞 Contacto y Soporte
 
 - **Empresa**: Tap Solutions
-- **Web**: [tapsolutions.com](https://tapsolutions.com)
-- **Email**: contacto@tapsolutions.com
+- **WhatsApp / Teléfono**: +505 76806028
+- **Email**: tapsolutions00@gmail.com

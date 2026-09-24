@@ -25,10 +25,6 @@ export default function FAQ() {
       q: '¿Qué resistencia tienen los stickers NFC en mesas de restaurantes?',
       a: 'Nuestros stickers están fabricados con una capa de resina epoxi de alta densidad que los hace 100% impermeables, resistentes a derrames de bebidas, grasas y productos de limpieza desinfectantes. No se despegan ni se desgastan con el uso diario.',
     },
-    {
-      q: '¿Cuánto tiempo tarda la implementación completa?',
-      a: 'Generalmente entre 3 y 7 días hábiles. Desarrollamos la plataforma web con la identidad de tu marca, programamos los chips NFC con tus enlaces seguros, realizamos las pruebas de compatibilidad y te enviamos el kit físico listo para funcionar.',
-    },
   ];
 
   return (

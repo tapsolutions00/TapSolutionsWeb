@@ -70,7 +70,7 @@ export default function Footer() {
 
             <div style={{ display: 'flex', gap: '0.75rem' }}>
               <a
-                href="https://wa.me/?text=Hola%20Tap%20Solutions"
+                href="https://wa.me/50576806028?text=Hola%20Tap%20Solutions"
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{
@@ -91,7 +91,7 @@ export default function Footer() {
                 <MessageCircle size={18} />
               </a>
               <a
-                href="mailto:contacto@tapsolutions.com"
+                href="mailto:tapsolutions00@gmail.com"
                 style={{
                   width: '38px',
                   height: '38px',

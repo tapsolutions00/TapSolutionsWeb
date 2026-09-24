@@ -41,7 +41,7 @@ export default function Contact() {
 - Servicio: ${formData.service}
 - Mensaje: ${formData.message || 'Quiero digitalizar mi negocio con ustedes.'}`;
 
-    const waUrl = `https://wa.me/?text=${encodeURIComponent(text)}`;
+    const waUrl = `https://wa.me/50576806028?text=${encodeURIComponent(text)}`;
     window.open(waUrl, '_blank');
   };
 
@@ -100,7 +100,7 @@ export default function Contact() {
 
               {/* Direct WhatsApp CTA Button */}
               <a
-                href="https://wa.me/?text=Hola%20Tap%20Solutions,%20deseo%20asesor%C3%ADa%20personalizada%20para%20mi%20negocio"
+                href="https://wa.me/50576806028?text=Hola%20Tap%20Solutions,%20deseo%20asesor%C3%ADa%20personalizada%20para%20mi%20negocio"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn-whatsapp"
@@ -133,10 +133,10 @@ export default function Contact() {
                       Correo Electrónico
                     </div>
                     <a
-                      href="mailto:contacto@tapsolutions.com"
+                      href="mailto:tapsolutions00@gmail.com"
                       style={{ color: '#ffffff', textDecoration: 'none', fontWeight: 600, fontSize: '0.95rem' }}
                     >
-                      contacto@tapsolutions.com
+                      tapsolutions00@gmail.com
                     </a>
                   </div>
                 </div>
@@ -162,7 +162,7 @@ export default function Contact() {
                       Atención Directa
                     </div>
                     <div style={{ color: '#ffffff', fontWeight: 600, fontSize: '0.95rem' }}>
-                      +1 (800) TAP-SOLUTIONS
+                      +505 76806028
                     </div>
                   </div>
                 </div>
@@ -331,7 +331,7 @@ export default function Contact() {
                       type="tel"
                       name="phone"
                       required
-                      placeholder="+1 (555) 000-0000"
+                      placeholder="+505 76806028"
                       value={formData.phone}
                       onChange={handleChange}
                       style={{

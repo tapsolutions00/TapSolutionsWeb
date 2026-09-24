@@ -69,7 +69,7 @@ export default function PricingCalculator() {
 - Plan Sugerido: ${plan.name}
 
 ¿Podrían brindarme información sobre precios y plazos de entrega?`;
-    return `https://wa.me/?text=${encodeURIComponent(text)}`;
+    return `https://wa.me/50576806028?text=${encodeURIComponent(text)}`;
   };
 
   return (

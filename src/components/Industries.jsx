@@ -208,7 +208,7 @@ export default function Industries() {
             </div>
 
             <a
-              href={`https://wa.me/?text=Hola%20Tap%20Solutions,%20me%20interesa%20la%20soluci%C3%B3n%20para%20${encodeURIComponent(
+              href={`https://wa.me/50576806028?text=Hola%20Tap%20Solutions,%20me%20interesa%20la%20soluci%C3%B3n%20para%20${encodeURIComponent(
                 current.title
               )}`}
               target="_blank"

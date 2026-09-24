@@ -827,7 +827,10 @@ export default function Hero() {
                       >
                         📲 Guardar Contacto en Agenda (.vcf)
                       </div>
-                      <div
+                      <a
+                        href="https://wa.me/50576806028?text=Hola%20Rafael,%20vi%20tu%20tarjeta%20digital%20Tap%20Solutions"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         style={{
                           background: 'rgba(37, 211, 102, 0.15)',
                           border: '1px solid rgba(37, 211, 102, 0.3)',
@@ -836,10 +839,12 @@ export default function Hero() {
                           fontSize: '0.725rem',
                           color: '#25d366',
                           fontWeight: 700,
+                          textDecoration: 'none',
+                          display: 'block',
                         }}
                       >
                         💬 Chatear por WhatsApp Directo
-                      </div>
+                      </a>
                       <div
                         style={{
                           background: 'rgba(0, 210, 255, 0.1)',

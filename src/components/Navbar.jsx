@@ -99,7 +99,7 @@ export default function Navbar() {
         {/* Action Button */}
         <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }} className="desktop-actions">
           <a
-            href="https://wa.me/?text=Hola%20Tap%20Solutions,%20deseo%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20servicios%20de%20tecnolog%C3%ADa%20NFC%20y%20desarrollo%20web"
+            href="https://wa.me/50576806028?text=Hola%20Tap%20Solutions,%20deseo%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20servicios%20de%20tecnolog%C3%ADa%20NFC%20y%20desarrollo%20web"
             target="_blank"
             rel="noopener noreferrer"
             className="btn btn-primary"
@@ -159,7 +159,7 @@ export default function Navbar() {
             </a>
           ))}
           <a
-            href="https://wa.me/?text=Hola%20Tap%20Solutions,%20deseo%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20servicios"
+            href="https://wa.me/50576806028?text=Hola%20Tap%20Solutions,%20deseo%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20servicios"
             target="_blank"
             rel="noopener noreferrer"
             onClick={handleLinkClick}
