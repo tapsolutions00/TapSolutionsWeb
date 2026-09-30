@@ -1,5 +1,6 @@
 import React from 'react';
 import Logo from './Logo';
+import InstagramIcon from './InstagramIcon';
 import {
   MessageCircle,
   Mail,
@@ -86,9 +87,50 @@ export default function Footer() {
                   transition: 'all 0.2s',
                   textDecoration: 'none',
                 }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.background = 'rgba(37, 211, 102, 0.15)';
+                  e.currentTarget.style.borderColor = '#25d366';
+                  e.currentTarget.style.transform = 'translateY(-2px)';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.background = 'rgba(255, 255, 255, 0.05)';
+                  e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.1)';
+                  e.currentTarget.style.transform = 'translateY(0)';
+                }}
                 title="WhatsApp"
               >
                 <MessageCircle size={18} />
+              </a>
+              <a
+                href="https://www.instagram.com/tapsolutionsni/"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  width: '38px',
+                  height: '38px',
+                  borderRadius: '10px',
+                  background: 'rgba(255, 255, 255, 0.05)',
+                  border: '1px solid rgba(255, 255, 255, 0.1)',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  color: '#e1306c',
+                  transition: 'all 0.2s',
+                  textDecoration: 'none',
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.background = 'rgba(225, 48, 108, 0.15)';
+                  e.currentTarget.style.borderColor = '#e1306c';
+                  e.currentTarget.style.transform = 'translateY(-2px)';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.background = 'rgba(255, 255, 255, 0.05)';
+                  e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.1)';
+                  e.currentTarget.style.transform = 'translateY(0)';
+                }}
+                title="Instagram @tapsolutionsni"
+              >
+                <InstagramIcon size={18} />
               </a>
               <a
                 href="mailto:tapsolutions00@gmail.com"
@@ -104,6 +146,16 @@ export default function Footer() {
                   color: '#00d2ff',
                   transition: 'all 0.2s',
                   textDecoration: 'none',
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.background = 'rgba(0, 210, 255, 0.15)';
+                  e.currentTarget.style.borderColor = '#00d2ff';
+                  e.currentTarget.style.transform = 'translateY(-2px)';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.background = 'rgba(255, 255, 255, 0.05)';
+                  e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.1)';
+                  e.currentTarget.style.transform = 'translateY(0)';
                 }}
                 title="Email"
               >

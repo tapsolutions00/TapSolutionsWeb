@@ -845,6 +845,24 @@ export default function Hero() {
                       >
                         💬 Chatear por WhatsApp Directo
                       </a>
+                      <a
+                        href="https://www.instagram.com/tapsolutionsni/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{
+                          background: 'rgba(225, 48, 108, 0.15)',
+                          border: '1px solid rgba(225, 48, 108, 0.35)',
+                          padding: '0.55rem',
+                          borderRadius: '8px',
+                          fontSize: '0.725rem',
+                          color: '#f43f5e',
+                          fontWeight: 700,
+                          textDecoration: 'none',
+                          display: 'block',
+                        }}
+                      >
+                        📸 Instagram @tapsolutionsni
+                      </a>
                       <div
                         style={{
                           background: 'rgba(0, 210, 255, 0.1)',

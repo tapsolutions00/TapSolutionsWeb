@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Logo from './Logo';
+import InstagramIcon from './InstagramIcon';
 import { Menu, X, MessageCircle, ArrowRight, Sparkles } from 'lucide-react';
 
 export default function Navbar() {
@@ -97,7 +98,42 @@ export default function Navbar() {
         </nav>
 
         {/* Action Button */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }} className="desktop-actions">
+        <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }} className="desktop-actions">
+          <a
+            href="https://www.instagram.com/tapsolutionsni/"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              width: '38px',
+              height: '38px',
+              borderRadius: '10px',
+              background: 'rgba(255, 255, 255, 0.05)',
+              border: '1px solid rgba(255, 255, 255, 0.1)',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              color: 'var(--text-secondary)',
+              transition: 'all 0.2s',
+              textDecoration: 'none',
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.color = '#e1306c';
+              e.currentTarget.style.borderColor = 'rgba(225, 48, 108, 0.5)';
+              e.currentTarget.style.background = 'rgba(225, 48, 108, 0.12)';
+              e.currentTarget.style.transform = 'translateY(-2px)';
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.color = 'var(--text-secondary)';
+              e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.1)';
+              e.currentTarget.style.background = 'rgba(255, 255, 255, 0.05)';
+              e.currentTarget.style.transform = 'translateY(0)';
+            }}
+            title="Instagram @tapsolutionsni"
+            aria-label="Instagram Oficial"
+          >
+            <InstagramIcon size={18} />
+          </a>
+
           <a
             href="https://wa.me/50576806028?text=Hola%20Tap%20Solutions,%20deseo%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20servicios%20de%20tecnolog%C3%ADa%20NFC%20y%20desarrollo%20web"
             target="_blank"
@@ -168,6 +204,27 @@ export default function Navbar() {
           >
             <MessageCircle size={18} />
             <span>Hablar por WhatsApp</span>
+          </a>
+
+          <a
+            href="https://www.instagram.com/tapsolutionsni/"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={handleLinkClick}
+            className="btn btn-secondary"
+            style={{
+              width: '100%',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              gap: '0.5rem',
+              color: '#ffffff',
+              border: '1px solid rgba(225, 48, 108, 0.4)',
+              background: 'rgba(225, 48, 108, 0.1)',
+            }}
+          >
+            <InstagramIcon size={18} color="#e1306c" />
+            <span>Instagram @tapsolutionsni</span>
           </a>
         </div>
       )}

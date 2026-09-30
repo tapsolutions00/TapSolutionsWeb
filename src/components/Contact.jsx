@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import InstagramIcon from './InstagramIcon';
 import {
   MessageCircle,
   Mail,
@@ -98,20 +99,91 @@ export default function Contact() {
                 conversa al instante con nuestro equipo de especialistas.
               </p>
 
-              {/* Direct WhatsApp CTA Button */}
-              <a
-                href="https://wa.me/50576806028?text=Hola%20Tap%20Solutions,%20deseo%20asesor%C3%ADa%20personalizada%20para%20mi%20negocio"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn btn-whatsapp"
-                style={{ width: '100%', padding: '1rem', fontSize: '1.05rem', marginBottom: '2rem' }}
-              >
-                <MessageCircle size={22} />
-                <span>Escríbenos por WhatsApp</span>
-              </a>
+              {/* Direct WhatsApp & Instagram Action Buttons */}
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem', marginBottom: '2rem' }}>
+                <a
+                  href="https://wa.me/50576806028?text=Hola%20Tap%20Solutions,%20deseo%20asesor%C3%ADa%20personalizada%20para%20mi%20negocio"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-whatsapp"
+                  style={{ width: '100%', padding: '0.95rem', fontSize: '1rem' }}
+                >
+                  <MessageCircle size={21} />
+                  <span>Escríbenos por WhatsApp</span>
+                </a>
+
+                <a
+                  href="https://www.instagram.com/tapsolutionsni/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn"
+                  style={{
+                    width: '100%',
+                    padding: '0.9rem',
+                    fontSize: '0.95rem',
+                    background: 'linear-gradient(135deg, rgba(225, 48, 108, 0.15) 0%, rgba(131, 58, 180, 0.15) 100%)',
+                    border: '1px solid rgba(225, 48, 108, 0.4)',
+                    color: '#ffffff',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    gap: '0.65rem',
+                    borderRadius: '0.75rem',
+                    fontWeight: 700,
+                    textDecoration: 'none',
+                    transition: 'all 0.25s ease',
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.borderColor = '#e1306c';
+                    e.currentTarget.style.boxShadow = '0 0 20px rgba(225, 48, 108, 0.35)';
+                    e.currentTarget.style.transform = 'translateY(-2px)';
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.borderColor = 'rgba(225, 48, 108, 0.4)';
+                    e.currentTarget.style.boxShadow = 'none';
+                    e.currentTarget.style.transform = 'translateY(0)';
+                  }}
+                >
+                  <InstagramIcon size={20} color="#e1306c" />
+                  <span>Visitar Instagram @tapsolutionsni</span>
+                </a>
+              </div>
 
               {/* Contact Info Items */}
               <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+                  <div
+                    style={{
+                      width: '44px',
+                      height: '44px',
+                      borderRadius: '10px',
+                      background: 'rgba(225, 48, 108, 0.1)',
+                      border: '1px solid rgba(225, 48, 108, 0.3)',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      color: '#e1306c',
+                    }}
+                  >
+                    <InstagramIcon size={20} color="#e1306c" />
+                  </div>
+                  <div>
+                    <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)', textTransform: 'uppercase' }}>
+                      Instagram Oficial
+                    </div>
+                    <a
+                      href="https://www.instagram.com/tapsolutionsni/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{ color: '#ffffff', textDecoration: 'none', fontWeight: 600, fontSize: '0.95rem', transition: 'color 0.2s' }}
+                      onMouseEnter={(e) => (e.currentTarget.style.color = '#e1306c')}
+                      onMouseLeave={(e) => (e.currentTarget.style.color = '#ffffff')}
+                    >
+                      @tapsolutionsni
+                    </a>
+                  </div>
+                </div>
+
                 <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
                   <div
                     style={{
